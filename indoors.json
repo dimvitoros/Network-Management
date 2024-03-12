@@ -1,0 +1,315 @@
+{
+    "application": {
+        "apType": "ovs",
+        "authentication": "none",
+        "dpctl": "",
+        "enableWmediumd": "0",
+        "ipBase": "10.0.0.0/8",
+        "mode": "g",
+        "netflow": {
+            "nflowAddId": "0",
+            "nflowTarget": "",
+            "nflowTimeout": "600"
+        },
+        "openFlowVersions": {
+            "ovsOf10": "1",
+            "ovsOf11": "0",
+            "ovsOf12": "0",
+            "ovsOf13": "0"
+        },
+        "passwd": "",
+        "sflow": {
+            "sflowHeader": "128",
+            "sflowPolling": "30",
+            "sflowSampling": "400",
+            "sflowTarget": ""
+        },
+        "startCLI": "0",
+        "switchType": "ovs",
+        "terminalType": "xterm"
+    },
+    "aps": [
+        {
+            "number": "2",
+            "opts": {
+                "apType": "default",
+                "authentication": "none",
+                "channel": "1",
+                "controllers": [],
+                "hostname": "ap2",
+                "mode": "g",
+                "nodeNum": 2,
+                "passwd": "",
+                "range": "default",
+                "ssid": "ap2-ssid",
+                "wlans": 1
+            },
+            "x": "386.0",
+            "y": "197.0"
+        },
+        {
+            "number": "4",
+            "opts": {
+                "apType": "default",
+                "authentication": "none",
+                "channel": "1",
+                "controllers": [],
+                "hostname": "ap4",
+                "mode": "g",
+                "nodeNum": 4,
+                "passwd": "",
+                "range": "default",
+                "ssid": "ap4-ssid",
+                "wlans": 1
+            },
+            "x": "1519.0",
+            "y": "460.0"
+        },
+        {
+            "number": "3",
+            "opts": {
+                "apType": "default",
+                "authentication": "none",
+                "channel": "1",
+                "controllers": [],
+                "hostname": "ap3",
+                "mode": "g",
+                "nodeNum": 3,
+                "passwd": "",
+                "range": "default",
+                "ssid": "ap3-ssid",
+                "wlans": 1
+            },
+            "x": "789.0",
+            "y": "98.0"
+        },
+        {
+            "number": "1",
+            "opts": {
+                "apType": "default",
+                "authentication": "none",
+                "channel": "1",
+                "controllers": [],
+                "hostname": "ap1",
+                "mode": "g",
+                "nodeNum": 1,
+                "passwd": "",
+                "range": "default",
+                "ssid": "ap1-ssid",
+                "wlans": 1
+            },
+            "x": "377.0",
+            "y": "649.0"
+        }
+    ],
+    "controllers": [
+        {
+            "opts": {
+                "controllerProtocol": "tcp",
+                "controllerType": "ref",
+                "hostname": "c0",
+                "remoteIP": "127.0.0.1",
+                "remotePort": 6653
+            },
+            "x": "991.0",
+            "y": "700.0"
+        }
+    ],
+    "hosts": [
+        {
+            "number": "1",
+            "opts": {
+                "hostname": "h1",
+                "nodeNum": 1,
+                "sched": "host"
+            },
+            "x": "833.0",
+            "y": "664.0"
+        }
+    ],
+    "links": [
+        {
+            "dest": "ap2",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "ap3",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "ap4",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "ap1",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "h1",
+            "opts": {},
+            "src": "s1"
+        }
+    ],
+    "stations": [
+        {
+            "number": "8",
+            "opts": {
+                "hostname": "sta8",
+                "mode": "g",
+                "nodeNum": 8,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "999.0",
+            "y": "99.0"
+        },
+        {
+            "number": "2",
+            "opts": {
+                "hostname": "sta2",
+                "mode": "g",
+                "nodeNum": 2,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "531.0",
+            "y": "715.0"
+        },
+        {
+            "number": "4",
+            "opts": {
+                "hostname": "sta4",
+                "mode": "g",
+                "nodeNum": 4,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "367.0",
+            "y": "415.0"
+        },
+        {
+            "number": "1",
+            "opts": {
+                "hostname": "sta1",
+                "mode": "g",
+                "nodeNum": 1,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "229.0",
+            "y": "675.0"
+        },
+        {
+            "number": "10",
+            "opts": {
+                "hostname": "sta10",
+                "mode": "g",
+                "nodeNum": 10,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "1582.0",
+            "y": "611.0"
+        },
+        {
+            "number": "9",
+            "opts": {
+                "hostname": "sta9",
+                "mode": "g",
+                "nodeNum": 9,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "1422.0",
+            "y": "331.0"
+        },
+        {
+            "number": "3",
+            "opts": {
+                "hostname": "sta3",
+                "mode": "g",
+                "nodeNum": 3,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "587.0",
+            "y": "524.0"
+        },
+        {
+            "number": "7",
+            "opts": {
+                "hostname": "sta7",
+                "mode": "g",
+                "nodeNum": 7,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "898.0",
+            "y": "237.0"
+        },
+        {
+            "number": "6",
+            "opts": {
+                "hostname": "sta6",
+                "mode": "g",
+                "nodeNum": 6,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "553.0",
+            "y": "191.0"
+        },
+        {
+            "number": "5",
+            "opts": {
+                "hostname": "sta5",
+                "mode": "g",
+                "nodeNum": 5,
+                "range": "0",
+                "sched": "station",
+                "wlans": 1,
+                "wpans": 0
+            },
+            "x": "518.0",
+            "y": "98.0"
+        }
+    ],
+    "switches": [
+        {
+            "number": "1",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s1",
+                "nodeNum": 1,
+                "switchType": "default"
+            },
+            "x": "933.0",
+            "y": "495.0"
+        }
+    ],
+    "version": "2"
+}
